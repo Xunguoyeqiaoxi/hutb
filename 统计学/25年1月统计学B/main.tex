@@ -1,0 +1,84 @@
+\documentclass[UTF8,a4paper,10pt]{ctexart}
+\usepackage[a4paper,top=14mm,bottom=16mm,left=16mm,right=16mm,footskip=8mm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,tabularx,array,enumitem,fancyhdr,lastpage,xcolor,hyperref,multirow}
+\setCJKmainfont{SimSun}\setCJKsansfont{SimHei}\setmainfont{Times New Roman}
+\hypersetup{hidelinks,unicode=true}\pagestyle{fancy}\fancyhf{}\fancyfoot[C]{第\thepage 页\quad 共\pageref*{LastPage}页}\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\arraystretch}{1.2}\setlist[enumerate]{leftmargin=2.2em,itemsep=.25em,topsep=.2em}
+\newcommand{\sect}[1]{\par\smallskip\noindent\fcolorbox{black}{black!4}{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{\sffamily\bfseries #1}}\par\smallskip}
+\newcommand{\opts}[1]{\par\hspace*{.5em}\begin{tabularx}{\dimexpr\linewidth-.5em}{@{}XXXX@{}}#1\end{tabularx}\par}
+\begin{document}\small
+\begin{center}{\zihao{2}\sffamily\bfseries 湖南工商大学课程考核试卷（A卷）}\par{\zihao{3}\bfseries 统计学B}\end{center}
+\noindent\begin{tabularx}{\linewidth}{@{}lXlX@{}}学分：&3&考核学期：&2024--2025学年度第一学期\\考核形式：&闭卷&年级、专业、层次：&全校基础课（本科）\\时量：&120分钟&&\end{tabularx}
+\noindent 计算结果保留4位小数。
+\sect{一、单选题（本大题共10小题，每小题1分，共10分）}
+\begin{enumerate}
+\item 下列变量适宜于连续登记的是（）。\opts{A.出生人口数&B.厂房面积&C.职工人数&D.生产设备数}
+\item 其他条件相同情况下，下列抽样方式中抽样误差最大的是（）。\opts{A.简单随机抽样&B.等距抽样&C.分层抽样&D.整群抽样}
+\item 人口普查的调查单位是（）。\opts{A.全部人&B.每户家庭&C.每个人&D.所有家庭}
+\item 对于生产过程中产品质量的检查和控制宜采用（）。\opts{A.普查&B.重点调查&C.典型调查&D.抽样调查}
+\item 总体平均数（　）等于样本平均数的平均数。\opts{A.只在随机重复抽样时&B.只在随机不重复抽样时&C.在随机抽样条件下都&D.在任何条件下都}
+\item 当$r=0.9$时，下列说法正确的是（）。\opts{A.其线性相关程度是$r=0.45$时的两倍&B.两变量高度正线性相关&C.90\%的点都密集在一条直线的周围&D.90\%的点高度相关}
+\item 成数方差取最大值的条件是成数等于（）。\opts{A.0&B.1&C.0.5&D.0.25}
+\item 2023年我国人均粮食占有量达到490公斤，这个指标是（）。\opts{A.平均指标&B.强度相对指标&C.比较相对指标&D.结构相对指标}
+\item 计算年距增长量或年距增长率可以消除下列哪一因素变动的影响（）。\opts{A.长期趋势&B.季节变动&C.循环变动&D.随机波动}
+\item 某企业产品年生产量为300万件，销售后年底剩20万件，则二者（）。\opts{A.均为时点指标&B.分别是时点指标和时期指标&C.均为时期指标&D.分别是时期指标和时点指标}
+\end{enumerate}
+\sect{二、判断题（本大题共10小题，每小题1分，共10分）}
+\begin{enumerate}[start=11]
+\item 中位数是处于一组数据正中间位置的标志值。（）
+\item 产品产量可以是连续变量，也可以是离散变量。（）
+\item 循环变动和季节变动的周期都是固定不变的。（）
+\item 样本容量的多少与抽样平均误差的大小成反比。（）
+\item 回归系数和相关系数都可用以判断现象之间相关的密切程度。（）
+\item 组中值是每一组中所有变量值的平均数。（）
+\item 统计活动过程的实质是统计信息的生产、传递和利用的过程。（）
+\item 调查时间是指可以开始调查工作的时间。（）
+\item 简单随机抽样最符合随机原则，因此任何情况下简单随机抽样最好。（）
+\item 当总体呈右偏分布时，算术平均数的值最小。（）
+\end{enumerate}
+\sect{三、基础计算题（本大题共5小题，每小题4分，共20分）}
+\begin{enumerate}[start=21]
+\item 某企业劳动生产率计划比上年提高15\%，实际提高10\%。请计算该企业劳动生产率的计划完成程度，并判断其是否完成了任务。
+\item 适度偏态下某数列的众数$M_o=81$，中位数$M_e=77$。请计算该数列的算术平均数$\bar x$的大约值。
+\item 已知$n=10,\sum x=86,\sum y=627,\sum x^2=1156,\sum y^2=50503,\sum xy=7408$，试计算相关系数$r$。
+\item 某数列的平均数为12，各变量值平方的平均数为169。计算数列方差，求标准差系数。
+\item 某企业2010--2015年间利润的年均发展速度为117\%，2021年利润较2015年翻了2番，2023年利润是2021年的1.5倍。求2010--2023年间该企业利润年均增长率。
+\end{enumerate}
+\sect{四、计算题}
+\begin{enumerate}[start=26]
+\item 某公司销售情况如下表（单位：万元），请完成下列计算。
+\begin{center}\begin{tabular}{crrrrr}\toprule 年份&第一季度&第二季度&第三季度&第四季度&合计\\\midrule2021年&180&380&100&90&750\\2022年&210&355&150&60&775\\2023年&195&410&120&80&805\\平均&&&&&\\季节指数&&&&&\\2024年&250&&&&\\\bottomrule\end{tabular}\end{center}
+\begin{enumerate}[label=（\arabic*）,leftmargin=2.8em]\item 计算各季度平均值、三年的季度总平均值，填充到表格对应空白栏；（4分）\item 计算季节指数、季节指数之和，填入表格；（4分）\item 2024年第一季度250万元，计算该年其他季度及全年销售额，填入表格。（4分）\end{enumerate}
+\item 某商场甲、乙、丙三种食品2018--2019年的销售资料如下表（单位：元），请完成下列计算。
+\begin{center}\begin{tabular}{crrrrrrr}\toprule\multirow{2}{*}{品种}&\multicolumn{2}{c}{销售价格}&\multicolumn{2}{c}{销售量}&\multicolumn{3}{c}{销售额}\\\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-8}&$p_0$&$p_1$&$q_0$&$q_1$&$p_0q_0$&$p_1q_1$&$p_0q_1$\\\midrule 甲&16&13&100&120&&&\\乙&7&5&150&160&&&\\丙&6&9&520&490&&&\\合计&&&&&&&\\\bottomrule\end{tabular}\end{center}
+\begin{enumerate}[label=（\arabic*）,leftmargin=2.8em]\item 计算填充表格销售额空白栏中的数据；（2分）\item 计算三种商品的销售价格总指数、销售量总指数、销售额总指数；（6分）\item 分析价格和销量变动对销售额变动的影响程度和影响额。（4分）\end{enumerate}
+\item 对一批成品采用重复抽样方法随机抽选200件进行检测，发现其中合格品190件，若置信概率为95.45\%（$t=2$）。试计算：
+\begin{enumerate}[label=（\arabic*）,leftmargin=2.8em]\item 该批成品合格率的抽样平均误差；（4分）\item 该批成品合格率的抽样极限误差；（4分）\item 该批成品合格率的置信区间。（4分）\end{enumerate}
+\end{enumerate}
+\sect{五、数据分析题（本大题共2小题，每小题12分，共24分）}
+\begin{enumerate}[start=29]
+\item 某企业40名工人八月份的产量数据如下表（单位：件）。
+\begin{center}\begin{tabular}{*{10}{r}}52&58&59&59&62&62&62&63&63&66\\68&70&70&71&72&72&75&75&76&76\\76&77&77&78&78&78&81&81&82&83\\83&83&85&85&86&89&89&91&95&97\end{tabular}\end{center}
+\begin{enumerate}[label=（\arabic*）,leftmargin=2.8em]\item 根据表中数据绘制茎叶图。（2分）\item 根据茎叶图编制组距式变量数列，填入如下表格：（2分）
+\begin{center}\begin{tabular}{ccccc}\toprule 产量&组中值$x$&次数$f$&频率&$xf$\\\midrule50--60&&&&\\60--70&&&&\\70--80&&&&\\80--90&&&&\\90--100&&&&\\合计&&&&\\\bottomrule\end{tabular}\end{center}
+\item 根据变量数列计算工人产量的加权算术平均数、中位数和众数；（6分）\item 根据算术平均数、中位数和众数分析该数列的分布特征。（2分）\end{enumerate}
+\item 2004--2023年人均GDP（$x$）和农村居民人均消费支出（$y$）数据（单位：元）的Excel回归分析结果如下表。
+\begin{center}\begin{tabular}{lr}\multicolumn{2}{c}{回归统计}\\\toprule Multiple R&0.9892\\R Square&0.9786\\Adjusted R Square&0.9774\\标准误差&916.8183\\观测值&20\\\bottomrule\end{tabular}\par\smallskip
+\begin{tabular}{lrrrrr}\multicolumn{6}{c}{方差分析}\\\toprule &df&SS&MS&F&Significance F\\回归分析&A&690392373&690392373&821.3522&$1.7966\mathrm E{-16}$\\残差&18&B&840556&&\\总计&19&705522377&&&\\\bottomrule\end{tabular}\par\smallskip
+\begin{tabular}{lrrrr}\toprule &Coefficients&标准误差&t Stat&P-value\\Intercept&$-2029.7435$&451.6981&$-4.4936$&0.0003\\X Variable 1&0.2458&0.0086&28.6592&$1.7966\mathrm E{-16}$\\\bottomrule\end{tabular}\end{center}
+\begin{enumerate}[label=（\arabic*）,leftmargin=2.8em]\item 写出相关系数、判定系数；（2分）\item 写出表格中的阴影部分（A、B）的数值（保留整数）；（4分）\item 写出$x$与$y$的一元线性回归方程；（3分）\item 若2024年人均GDP达到95000元，试估计该年农村居民人均消费支出。（3分）\end{enumerate}
+\end{enumerate}
+\newpage\begin{center}{\zihao{2}\sffamily\bfseries 手写解答电子化}\end{center}
+\sect{第21--25题}
+21. $\frac{1+10\%}{1+15\%}=95.65\%<100\%$，未完成任务。\quad
+22. $M_o=3M_e-2\bar x$，故$\bar x=(3\times77-81)/2=75$。\par
+23. $r=\frac{n\sum xy-\sum x\sum y}{\sqrt{[n\sum x^2-(\sum x)^2][n\sum y^2-(\sum y)^2]}}=0.9338$。\par
+24. $\sigma^2=169-12^2=25$，$\sigma=5$，$V_\sigma=5/12=41.67\%$。\par
+25. 年均发展速度$=[(117\%)^5\times4\times1.5]^{1/13}$，年均增长率为年均发展速度减1。
+\sect{第26--30题关键结果}
+26. 季度平均值为195、381.67、123.33、76.67，总平均值194.17；季节指数约100.43\%、196.56\%、63.52\%、39.49\%。\par
+27. $\sum p_0q_0=5770,\sum p_1q_1=6710,\sum p_0q_1=5980$；销售额总指数116.29\%，价格总指数112.21\%，销量总指数103.64\%。\par
+28. $p=0.95$，$\mu_p=\sqrt{0.95\times0.05/200}=0.0154$，$\Delta_p=0.0308$，置信区间$(0.9192,0.9808)$。\par
+29. 分组频数依次为4、7、15、11、3；组中值55、65、75、85、95；$\sum xf=3020$，$\bar x=75.5$，中位数约75.83，众数约76.67，呈左偏分布。\par
+30. $A=1$，$B=15130004$；$\hat y=-2029.7435+0.2458x$；代入$x=95000$，$\hat y=21321.26$元。
+\end{document}

@@ -1,0 +1,72 @@
+\documentclass[UTF8,a4paper,10pt]{ctexart}
+\usepackage[a4paper,top=14mm,bottom=16mm,left=16mm,right=16mm,footskip=8mm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,tabularx,array,enumitem,fancyhdr,lastpage,xcolor,hyperref,multirow}
+\setCJKmainfont{SimSun}\setCJKsansfont{SimHei}\setmainfont{Times New Roman}
+\hypersetup{hidelinks,unicode=true}\pagestyle{fancy}\fancyhf{}\fancyfoot[C]{第\thepage 页\quad 共\pageref*{LastPage}页}\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\arraystretch}{1.2}\setlist[enumerate]{leftmargin=2.2em,itemsep=.25em,topsep=.2em}
+\newcommand{\sect}[1]{\par\smallskip\noindent\fcolorbox{black}{black!4}{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{\sffamily\bfseries #1}}\par\smallskip}
+\newcommand{\opts}[1]{\par\hspace*{.5em}\begin{tabularx}{\dimexpr\linewidth-.5em}{@{}XXXX@{}}#1\end{tabularx}\par}
+\begin{document}\small
+\begin{center}{\zihao{2}\sffamily\bfseries 统计学B重修卷}\end{center}
+\sect{一、单项选择题（每小题2分，共30分）}
+\begin{enumerate}
+\item 统计学的创始人一般认为是（）。\opts{A.配第&B.阿亨瓦尔&C.康令&D.格朗特}
+\item 研究某市工业企业生产设备使用情况时，总体单位是该市（）。\opts{A.每一家工业企业&B.所有工业企业&C.工业企业每一单位生产设备&D.工业企业所有生产设备}
+\item 对于生产过程中产品质量的检查和控制宜采用（）。\opts{A.普查&B.重点调查&C.典型调查&D.抽样调查}
+\item 规定普查的标准时点旨在保证调查资料的（）。\opts{A.准确性&B.时效性&C.周期性&D.全面性}
+\item 对总体按某一标志分组的结果体现了（）。\opts{A.组内同质性、组间同质性&B.组内同质性、组间差异性&C.组内差异性、组间同质性&D.组内差异性、组间差异性}
+\item 统计资料整理的关键和核心是（）。\opts{A.资料审核&B.资料分组&C.资料汇总&D.资料陈示}
+\item 将相对指标与总量指标结合应用，通常是计算（）。\opts{A.平均增长水平&B.平均发展速度&C.平均增长速度&D.增长1\%的绝对值}
+\item 组中值作为被平均数值计算加权平均数时，其假定条件是（）。\opts{A.总平均数与组平均数相等&B.各组平均数相等&C.各组平均数与其组中值相等&D.各组组中值相等}
+\item 反映总体分布集中趋势的指标是（）。\opts{A.总量指标&B.相对指标&C.平均指标&D.变异指标}
+\item 累计增长量等于相应时期各个逐期增长量的（）。\opts{A.和&B.差&C.积&D.商}
+\item 同度量因素固定在基期而编制出来的总指数统称为（）。\opts{A.拉氏指数&B.派氏指数&C.杨氏指数&D.费氏指数}
+\item 其他条件相同的前提下，下列抽样方式中抽样误差最小的是（）。\opts{A.简单随机抽样&B.等距抽样&C.分层抽样&D.整群抽样}
+\item 总体指标置信区间的长度等于允许误差的（）。\opts{A.两倍&B.三倍&C.四倍&D.五倍}
+\item 测定变量间相关方向和相关程度最准确的方法是（）。\opts{A.定性分析法&B.相关表法&C.相关图法&D.相关系数法}
+\item 各变量值与其算术平均数离差平方的和为（）。\opts{A.0&B.1&C.最小值&D.最大值}
+\end{enumerate}
+\sect{二、判断题（正确填“A”，错误填“B”。每小题1分，共10分）}
+\begin{enumerate}
+\item 若两变量存在线性相关，则能且仅能算出一个相关系数。（）
+\item 在分组的前提下，总平均水平的变动同时受组平均水平和总体结构两个因素变动的影响。（）
+\item 测定现象的季节变动时，至少要有连续三年分季度或者分月份的时间序列资料。（）
+\item 当总体呈偏态分布时，有$M_o=3M_e-2\bar x$。（）
+\item 标志和指标都能说明总体特征。（）
+\item 计划完成百分数大于100\%时，表示一定超额完成了计划。（）
+\item 对于同一原始资料而言，采用频数作为权数与采用频率$f/\sum f$作为权数计算出的平均数总是相等的。（）
+\item 在一定条件下，比较相对数和比例相对数可相互转化。（）
+\item 不论是按品质标志分组还是按数量标志分组，都能形成变量数列。（）
+\item 从理论上讲，简单随机抽样是最符合随机原则的抽样方式。（）
+\end{enumerate}
+\sect{三、基础计算题（每小题4分，共20分）}
+\begin{enumerate}
+\item 某商业企业的商品销售额2018年计划比2017年增长15\%，实际增长18\%，则其计划完成百分数为（）。\opts{A.120.00\%&B.102.61\%&C.20.00\%&D.2.61\%}
+\item 已知一组变量值平方的平均数为2500，对平均数的标准差为30，则其平均数为（）。\opts{A.40&B.1600&C.470&D.20}
+\item 某工业企业的工业总产值2010年比2000年增长80\%，2015年比2010年增长50\%，2018年比2015年增长30\%，则该企业2000--2018年间工业总产值的年平均增长速度为（）。\opts{A.8.89\%&B.6.89\%&C.8.85\%&D.7.22\%}
+\item 某单位职工平均工资的可变组成指数为150\%，结构影响指数为115\%，则其固定构成指数为（）。\opts{A.35\%&B.172.50\%&C.130.43\%&D.76.67\%}
+\item 对某厂生产的某种产品共计5000件进行质量检查，结果发现有40件不合格，则其合格率的标准差为（）。\opts{A.99.2\%&B.0.8\%&C.0.79\%&D.8.91\%}
+\end{enumerate}
+\sect{四、计算分析题（每小题10分，共40分）}
+\begin{enumerate}
+\item 某地区2015--2018年间各年分季度的旅游业产值（百万元）如下表：
+\begin{center}\begin{tabular}{crrrr}\toprule 年份&一季度&二季度&三季度&四季度\\\midrule2015&12.6&19.6&25.2&17.8\\2016&14.6&18.8&24.4&18.4\\2017&13.8&21.2&23.8&19.4\\2018&14.2&20.4&25.6&18.6\\\bottomrule\end{tabular}\end{center}
+要求用同期平均法计算该地各季度旅游业产值的季节指数，并根据所计算的季节指数回答：
+\begin{enumerate}[label=（\arabic*）,leftmargin=2.8em]\item 一、二、三、四季度的季节指数依次为（）。\opts{A.128.40\%、96.24\%、71.60\%、103.76\%&B.103.76\%、71.60\%、96.24\%、128.40\%&C.128.40\%、71.60\%、96.24\%、103.76\%&D.103.76\%、96.24\%、71.60\%、128.40\%}\item 该地旅游业的旺季是（）。\opts{A.一、二季度&B.二、三季度&C.三、四季度&D.一、四季度}\item 该地旅游业受季节变动影响最大的两个季度是（）。\opts{A.一、二季度&B.一、三季度&C.三、四季度&D.二、四季度}\item 若2019年第一、二季度产值分别为25.5和18.5百万元，则2019年全年产值为（）。\opts{A.76.1652&B.78.3476&C.75.4393&D.76.8911}\item 上述条件下，2019年第四季度产值为（）。\opts{A.14.0242&B.18.8504&C.20.3234&D.25.1496}\end{enumerate}
+\item 某企业甲、乙、丙三种产品的有关资料如下表：
+\begin{center}\begin{tabular}{crrr}\toprule 产品名称&基期总产值（万元）&报告期总产值（万元）&报告期产量较基期增减（\%）\\\midrule 甲&450&1530&$+30$\\乙&850&1040&$+70$\\丙&700&930&$-40$\\\bottomrule\end{tabular}\end{center}
+要求回答：产量总指数与价格总指数的计算公式；产量总指数；产量变动影响额；出厂价格总指数；价格变动影响额。各小题选择项依次为：104.83、122.50、166.93、142.86；$-161.32$、$+338.68$、$+450$、$+1050$；122.50、104.83、142.86、166.93；$-1500$、$+1030$、$+161.32$、$+1338.68$。
+\item 某外贸企业出口一种小包装名茶，规定每包重量不得低于150克，现采用纯随机不重复抽样方法抽取100包进行检查，结果如下表：
+\begin{center}\begin{tabular}{cr}\toprule 按重量分组（克/包）&抽查包数（包）\\\midrule150以下&4\\150--151&75\\151--152&16\\152及以上&5\\合计&100\\\bottomrule\end{tabular}\end{center}
+在95.45\%概率（概率度为2）保证下回答：样本平均数、样本标准差、平均数抽样平均误差、抽样极限误差、总体平均数置信区间。
+\item 根据某市2011--2018年GDP和财政收入（亿元），用Excel进行回归分析结果如下表：
+\begin{center}\begin{tabular}{lrrrrr}\toprule &df&SS&MS&F&Significance F\\回归分析&&&&&$4.5\mathrm E{-09}$\\残差&&0.0379&&&\\总计&7&15.5950&&&\\\bottomrule\end{tabular}\par\smallskip
+\begin{tabular}{lrrrr}\toprule &Coefficients&标准误差&t Stat&P-value\\Intercept&$-0.8138$&0.08899&$-9.14486$&$9.62\mathrm E{-05}$\\X Variable 1&0.0743&0.001498&49.61038&$4.5\mathrm E{-09}$\\\bottomrule\end{tabular}\end{center}
+要求回答：回归平方和和残差平方和；财政收入总变差中由GDP变动引起的比例；相关系数和估计标准误差；显著性；一元线性回归模型。
+\end{enumerate}
+\newpage\begin{center}{\zihao{2}\sffamily\bfseries 参考答案}\end{center}
+判断题：1--5 对、对、对、对、对；6--10 错、对、对、错、对。\par
+选择题：1--5 ACDAB；6--10 BDCCA；11--15 ACADC。\par
+基础计算题：1--5 BCDCD。\par
+计算分析题：第1题1--5 ADBBC；第2题1--5 CBCAB；第3题1--5 CDDDC；第4题1--5 CADAD。
+\end{document}

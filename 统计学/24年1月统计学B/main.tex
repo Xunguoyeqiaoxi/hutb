@@ -1,0 +1,56 @@
+\documentclass[UTF8,a4paper,10pt]{ctexart}
+\usepackage[a4paper,top=16mm,bottom=17mm,left=17mm,right=17mm,footskip=9mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools,booktabs,tabularx,array,enumitem,fancyhdr,lastpage,xcolor,hyperref}
+\setCJKmainfont{SimSun}\setCJKsansfont{SimHei}\setmainfont{Times New Roman}
+\hypersetup{hidelinks,unicode=true}
+\pagestyle{fancy}\fancyhf{}\fancyfoot[C]{第\thepage 页\quad 共\pageref*{LastPage}页}\renewcommand{\headrulewidth}{0pt}
+\setlist[enumerate]{leftmargin=2.1em,itemsep=.2em,topsep=.2em}
+\emergencystretch=3em
+\newcommand{\sect}[1]{\par\smallskip\noindent\fcolorbox{black}{black!4}{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{\sffamily\bfseries #1}}\par\smallskip}
+\newcommand{\opts}[1]{\par\hspace{1.5em}#1\par}
+\begin{document}
+\begin{center}{\zihao{2}\sffamily\bfseries 湖南工商大学课程考核试卷}\\[2mm]{\zihao{3}\bfseries 24年1月统计学B}\end{center}
+\begin{tabularx}{\linewidth}{@{}lXlX@{}}课程名称：&统计学B&考核形式：&闭卷\\学分：&3&时量：&120分钟\end{tabularx}
+\smallskip\noindent\textbf{说明：}请将答案写在答卷上；计算结果按原题要求保留小数。
+\sect{一、单项选择题（每小题2分，共30分）}
+\begin{enumerate}
+\item 下列标志中属于品质标志的是（）。\opts{A. 所属学校　B. 学生人数　C. 学校生师比　D. 考研录取率}
+\item 下列变量中属于离散变量的是（）。\opts{A. 成绩　B. 职工人数　C. 身高　D. 商品销售额}
+\item 下列指标中属于平均指标的是（）。\opts{A. 工业生产总值　B. 人均机动车数量　C. 三次产业比重　D. 工人劳动生产率}
+\item 研究网红奶茶店营业情况，总体单位是（）。\opts{A. 所有奶茶店　B. 每家奶茶店营业额　C. 每一家奶茶店　D. 所有奶茶店营业额}
+\item 填报单位与调查单位一致的是（）。\opts{A. 矿产资源调查　B. 耕地面积调查　C. 人口普查　D. 个人兴趣爱好调查}
+\item 学生考研报考意愿调查要求一周内完成，这一时间是（）。\opts{A. 登记时间　B. 调查时间　C. 调查期限　D. 调查时期}
+\item 某银行贷款呆账率为5\%，其成数方差为（）。\opts{A. 4.75\%　B. 2.5\%　C. 3.5\%　D. 5\%}
+\item 下列属于强度相对数的是（）。\opts{A. 平均工资　B. 职工出勤率　C. 人均收入　D. 工人劳动生产率}
+\item 人口死亡率按年龄分组后的曲线图通常呈（）。\opts{A. U形　B. 钟形　C. 正J形　D. 反J形}
+\item 某班40名学生男女各半，性别成数方差为（）。\opts{A. 25\%　B. 30\%　C. 40\%　D. 50\%}
+\item 相关关系密切程度最大的是（）。\opts{A. $r=0.96$　B. $r=-0.99$　C. $r=-0.95$　D. $r=-0.80$}
+\item 某商店销售额增长水平年年相同，则环比增长速度（）。\opts{A. 年年下降　B. 年年上升　C. 年年相同　D. 不确定}
+\item 产品计划单位成本降低5\%，实际降低7\%，实际单位成本为计划的（）。\opts{A. 97.9\%　B. 140\%　C. 102.2\%　D. 2\%}
+\item 单位成本降低8\%，总成本增长15\%，则产量（）。\opts{A. 增长25\%　B. 减少7\%　C. 增长13.6\%　D. 增长15.8\%}
+\item 加权调和平均数指数的特定权数是（）。\opts{A. 基期总额　B. 报告期总额　C. 假定期总额　D. 固定总额}
+\end{enumerate}
+\sect{二、判断题（正确打“√”，错误打“X”。每小题1分，共10分）}
+\begin{enumerate}[start=16]\item 时间数列中各指标的数值不能直接相加。\item 全面调查是对调查对象的各方面都进行调查。\item 正相关指的就是两个变量之间的变动方向是相一致的。\item 环比速度与定基速度之间存在如下关系式：各期环比增长速度的连乘积等于定基增长速度。\item 抽样调查的调查误差大小可以控制。\item 平均增长速度是环比增长速度的连乘积开$n$次方根。\item 逐期增长量之和等于相应的累计增长量。\item 重点调查中的重点单位是指这些单位是工作中的重点。\item 回归系数$b$的符号与相关系数$r$的符号，可以相同也可以不相同。\item 数量指标是由数量标志值汇总来的，质量指标是由品质标志汇总来的。\end{enumerate}
+\sect{三、基础计算题（第26--30题）}
+\begin{enumerate}[start=26]\item A、B、C三个企业的流通费用率情况如下表所示，求这三个企业的平均流通费用率。
+\begin{center}\begin{tabular}{crrr}\toprule 企业&A&B&C\\\midrule 流通费用额（万元）&30&20&40\\流通费用率（\%）&6&5&8\\\bottomrule\end{tabular}\end{center}
+\item 某等距式组距式变量数列的组距为20，且分组按变量值从小到大排序，若第二组的上限值为55，求第一组的组中值。\item 某公司计划明年的商品销售额比今年增长32\%，价格提高12\%，试求明年的销售量比今年增长多少才能完成销售计划？\item 某品牌2021--2023年销售额数据如下表所示。请采用同期平均法计算季节指数，填入对应表格中，不得留白。并说明受季节因素影响最大的季度是哪个？请说明理由。\item 在第29题中，若该品牌期望2023年下半年的销售额能超过1000万元，请你利用季节指数的特点对其下半年各季度的计划销售额设置一个合理的数值。\end{enumerate}
+\begin{center}\begin{tabular}{c*{4}{r}}\toprule 年份&一季度&二季度&三季度&四季度\\\midrule2021&300&500&180&600\\2022&400&650&200&680\\2023&500&220&260&520\\\bottomrule\end{tabular}\end{center}
+\sect{四、计算与数据分析题}
+\begin{enumerate}[start=31]\item 某公司50家门店2023年第三季度的营业额如下表所示，请按要求进行统计整理和综合指标分析。\begin{enumerate}[label=（\arabic*）,leftmargin=2.8em]\item 根据表中资料，绘制营业额的茎叶图和直方图；（4分）\item 根据表中资料，编制组距式变量数列，在答卷上对应表格中列出频数、频率、组中值、向上累计频数；（4分）\item 根据组距式变量数列，计算该公司50家门店营业额的算术平均数、标准差、中位数、众数；（8分）\item 该公司50家门店2022年第三季度的平均营业额为88万元，标准差为16.2万元，请比较这两年第三季度营业额的稳定性。（4分）\end{enumerate}\par\small 25、30、42、46、50、66、55、67、60、62、69、70、65、66、77、71、78、72、73、80、74、81、75、83、76、89、76、84、93、84、85、96、85、98、86、104、98、105、106、99、100、106、102、108、103、109、113、114、119、128。\normalsize
+\item 请对A、B、C三类产品的销售额变动进行因素分析。
+\begin{center}\begin{tabular}{crrr}\toprule 产品名称&2022年销售额（万元）&2023年销售额（万元）&报告期销售量较基期增减（\%）\\\midrule A&200&300&8\\B&300&500&10\\C&400&400&\texttt{TODO}\\\bottomrule\end{tabular}\end{center}
+\begin{enumerate}[label=（\arabic*）,leftmargin=2.8em]\item 计算这三个产品的销售额总指数、销售量总指数和价格总指数；（6分）\item 从相对数和绝对数上分析产品价格及销售量对销售额变动的影响。（4分）\end{enumerate}
+\item 经调查得到现在爆火的联名产品销售额$y$（万元）与其广告投入$x$（万元）的数据，对其开展回归分析得到结果如下。
+\begin{center}\begin{tabular}{lr}\toprule Multiple R&0.9939231\\R Square&0.9878831\\Adjusted R Square&0.9863685\\标准误差&2530.5942\\观测值&10\\\bottomrule\end{tabular}\par\smallskip
+\begin{tabular}{lrrrr}\toprule &df&SS&F&Significance F\\回归分析&1&$4.18\mathrm E{+09}$&652.23353&$5.92303\mathrm E{-09}$\\残差&8&51231255&&\\总计&9&$4.23\mathrm E{+09}$&&\\\bottomrule\end{tabular}\par\smallskip
+\begin{tabular}{lrrrr}\toprule &Coefficients&标准误差&t Stat&P-value\\Intercept&2229.5724&1015.547&2.19544&0.0594149\\X&17.012921&0.666158&25.53886&$5.923\mathrm E{-09}$\\\bottomrule\end{tabular}\end{center}
+\begin{enumerate}[label=（\arabic*）,leftmargin=2.8em]\item 写出联名产品销售与广告投入之间的相关系数；（1分）\item 写出联名产品销售与广告投入之间的回归方程；（2分）\item 请解释上述回归方程中回归系数的含义；（2分）\item 请对回归方程的拟合程度、回归方程及回归系数的显著性进行检验；（3分）\item 如果广告投入1500万元，请预测联名产品销售额。（2分）\end{enumerate}\end{enumerate}
+\newpage\begin{center}{\zihao{2}\sffamily\bfseries 参考答案与校对附录}\end{center}
+\sect{参考答案}选择题：1--5 ABBAC，6--10 CDCAA，11--15 BAAAA。判断题：16--20 错错对错对，21--25 错对错错错。原文件另附手写计算过程。
+\sect{通用公式复排}
+\[r=\frac{n\sum xy-\sum x\sum y}{\sqrt{[n\sum x^2-(\sum x)^2][n\sum y^2-(\sum y)^2]}},\quad
+\sigma_p=\sqrt{\frac{p(1-p)}{n}},\quad I_p=\frac{\sum p_1q_1}{\sum p_0q_1},\quad I_q=\frac{\sum p_0q_1}{\sum p_0q_0}.\]
+\sect{OCR校对提示}源文件中无法逐字确认的位置已在源码中以\texttt{TODO}标注，并在同目录的《校对说明》中列出。不得据本电子版推断官方答案。
+\end{document}

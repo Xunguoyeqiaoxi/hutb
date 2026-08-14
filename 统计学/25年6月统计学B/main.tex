@@ -1,0 +1,107 @@
+\documentclass[UTF8,a4paper,10pt]{ctexart}
+\usepackage[a4paper,top=14mm,bottom=16mm,left=16mm,right=16mm,footskip=8mm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,tabularx,array,enumitem,fancyhdr,lastpage,xcolor,hyperref,multirow}
+\setCJKmainfont{SimSun}\setCJKsansfont{SimHei}\setmainfont{Times New Roman}
+\hypersetup{hidelinks,unicode=true}\pagestyle{fancy}\fancyhf{}\fancyfoot[C]{第\thepage 页\quad 共\pageref*{LastPage}页}\renewcommand{\headrulewidth}{0pt}
+\setlength{\parindent}{2em}\setlength{\parskip}{0pt}\renewcommand{\arraystretch}{1.22}
+\setlist[enumerate]{leftmargin=2.2em,itemsep=.22em,topsep=.2em,parsep=0pt}
+\newcommand{\sect}[1]{\par\smallskip\noindent\fcolorbox{black}{black!4}{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{\sffamily\bfseries #1}}\par\smallskip}
+\newcommand{\opts}[1]{\par\hspace*{.5em}\begin{tabularx}{\dimexpr\linewidth-.5em}{@{}XXXX@{}}#1\end{tabularx}\par}
+\newcommand{\blank}{\underline{\hspace{2.8cm}}}
+\begin{document}\small
+\begin{center}{\zihao{2}\sffamily\bfseries 湖南工商大学课程考核试卷问卷}\par{\zihao{3}\bfseries （A）卷}\end{center}
+\noindent\begin{tabularx}{\linewidth}{@{}lXlX@{}}课程名称：&统计学B&学分：&3学分\\考核学期：&2024--2025学年第2学期&考核形式：&闭卷\\年级、专业：&本科《统计学B》各班&时量：&120分钟\end{tabularx}
+\begin{center}\begin{tabular}{|c|c|c|c|c|c|}\hline 题号&一&二&三&四&总分\\\hline 分值&25&10&20&45&100\\\hline\end{tabular}\end{center}
+\noindent 请考生将答案做在答卷纸上，允许考生携带计算器进入考场。
+\sect{一、选择题 I（单选题，请选择最正确的答案。每小题1分，共15分）}
+\begin{enumerate}
+\item 在古典统计学时期，“有统计学之实，无统计学之名”的学派是（）。\opts{A.数理统计学派&B.国势学派&C.记述学派&D.政治算术学派}
+\item 下列指标中，属于质量指标的是（）。\opts{A.国内生产总值&B.就业人员&C.人均水资源量&D.出口总额}
+\item 下列标志中，属于顺序标志的是（）。\opts{A.满意程度&B.年龄&C.学号&D.温度}
+\item 下列变量中，属于离散变量的是（）。\opts{A.销售量&B.销售额&C.销售价格&D.商店数量}
+\item 某地区有50家中国建设银行，要了解它们的经营状况，则总体单位是（）。\opts{A.每一家中国建设银行&B.每一家中国建设银行的个人存款&C.所有的中国建设银行&D.所有中国建设银行的个人存款总额}
+\item 下列调查中填报单位与调查单位不一致的是（）。\opts{A.消费者体验调查&B.人口普查&C.购买意愿调查&D.学习情况调查}
+\item 我国第五次经济普查的时期资料为2023年年度资料，这一时间指的是（）。\opts{A.登记时间&B.标准时点&C.调查期限&D.调查时期}
+\item 对于某月50家商店同一产品的销售量数据，不宜使用的图形是（）。\opts{A.条形图&B.折线图&C.饼图&D.茎叶图}
+\item 下列指标中，属于平均指标的是（）。\opts{A.人均GDP&B.人均耕地面积&C.人均粮食产量&D.职工平均工资}
+\item 在纯随机重复抽样条件下，若其它条件不变允许误差增加3倍，则样本容量（）。\opts{A.减少$15/16$&B.减少$1/16$&C.减少$8/9$&D.减少$1/9$}
+\item 下列回归方程与相关系数的对应式中，错误的是（）。\opts{A.$\hat y=12+4x,r=0.6$&B.$\hat y=15-8x,r=-0.4$&C.$\hat y=20-3x,r=0.7$&D.$\hat y=18+2x,r=0.9$}
+\item 某商店销售额的环比增长速度为正增长且年年相同，则其销售额的增长量（）。\opts{A.逐年减少&B.逐年增加&C.年年相同&D.不确定}
+\item 已知某企业2024年6--12月月末职工人数，则2024年下半年该企业平均职工人数的计算公式为（）。\par\noindent\texttt{TODO：原扫描件第13题四个公式被分页截断，现有图像不能可靠辨清；不作猜测性补写。}
+\item 去年支付宝推广的某款保险与前年相比交易量增加了3\%，交易价格下降了3\%，则该款保险的保费收入（）。\opts{A.没有变化&B.减少0.09\%&C.增加6.09\%&D.减少5.83\%}
+\item 某指数计算公式为$\sum p_1q_1/\sum p_1q_0$，则该指数是（）。\opts{A.拉式质量指数&B.派式质量指数&C.拉式数量指数&D.派式数量指数}
+\end{enumerate}
+\sect{一、选择题 II（请选择合适的选项补充分析。每空1分，共10分）}
+某超市收集了一些品牌洗发水的广告投入费用（$x$，万元）与其销售额（$y$，万元）的数据，运用Excel输出的回归分析结果如下图所示，请完成以下分析。（显著性水平为0.05）
+\begin{center}
+\begin{tabular}{lr}\multicolumn{2}{c}{回归统计}\\\toprule Multiple R&0.8935\\R Square&0.7984\\Adjusted R Square&0.7872\\标准误差&13.6164\\观测值&20\\\bottomrule\end{tabular}\qquad
+\begin{tabular}{lrrrr}\multicolumn{5}{c}{方差分析}\\\toprule &df&SS&MS&Significance F\\回归分析&1&13217.6956&71.2906&$1.1273\mathrm E{-07}$\\残差&18&3337.3044&&\\总计&19&16555&&\\\bottomrule\end{tabular}
+\par\smallskip
+\begin{tabular}{lrrrr}\toprule &Coefficients&标准误差&t Stat&P-value\\Intercept&45.7235&6.7406&6.7833&$2.3596\mathrm E{-06}$\\X Variable 1&1.7570&0.2081&8.4434&$1.1273\mathrm E{-07}$\\\bottomrule\end{tabular}
+\end{center}
+品牌洗发水广告投入费用与其销售额的相关系数为（16），说明它们之间呈高度正相关性；构建的回归方程为（17），其可决系数为（18），说明回归方程的拟合程度较高；又由$t$检验可知，回归系数的显著性检验（19），而$F$检验统计量的值为（20），说明回归模型的显著性检验（21）。由此可知，洗发水的广告投入费用每增加1万元，其销售额会（22）增加（23）万元，而且若不进行广告宣传，其销售额还是会有（24）万元。因此，若某款洗发水计划投入20万元广告费，则预计该款洗发水的销售额为（25）万元。
+\begin{enumerate}[start=16]
+\item \opts{A.0.7872&B.0.7984&C.0.8935&D.0.9453}
+\item \opts{A.$y=45.7235+1.757x$&B.$y=1.757+45.7235x$&C.$\hat y=45.7235+1.757x$&D.$\hat y=1.757+45.7235x$}
+\item \opts{A.0.7872&B.0.7984&C.0.8935&D.0.9453}
+\item \opts{A.都通过&B.截距没通过&C.斜率没通过&D.都不通过}
+\item \opts{A.6.7833，$p=2.3596\times10^{-6}$&B.8.4434，$p=1.1273\times10^{-7}$&C.71.2906，$p=1.1273\times10^{-7}$&D.3.9606，$p=2.3596\times10^{-6}$}
+\item \opts{A.通过&B.不通过&C.都通过&D.都不通过}
+\item \opts{A.一定&B.平均&C.至多&D.至少}
+\item \opts{A.45.7235&B.1.757&C.6.7833&D.8.4434}
+\item \opts{A.45.7235&B.1.757&C.6.7833&D.8.4434}
+\item \opts{A.80.8635&B.144.1094&C.175.6513&D.916.227}
+\end{enumerate}
+\sect{二、判断题（正确选“A”，错误选“B”。每小题1分，共10分）}
+\begin{enumerate}[start=26]
+\item 不变标志是构成总体的基本条件，但并不是统计研究的对象。（）
+\item 对于一个确定的总体，其单位总量是唯一的。（）
+\item 一次性调查是指只调查一次，以后不再进行的调查。（）
+\item 某组距式数列中80--90组的向上累计频数为80，说明分组标志值小于或等于90的个体有80个。（）
+\item 当标志值中有极值出现时，应使用开口组编制开口数列。（）
+\item 企业全员劳动生产率是强度相对数，而生产工人劳动生产率是平均指标。（）
+\item 若A、B、C三个商店去年的销售额计划完成程度分别为85\%、100\%和115\%，则其平均计划完成程度为100\%。（）
+\item 确定必要样本容量时，若计算结果为非整数，则应采用“向下取整法”。（）
+\item 各期环比增长速度的连乘积等于总增长速度。（）
+\item 加权调和平均数指数可变形为综合指数所用的特定权数是基期总额。（）
+\end{enumerate}
+\sect{三、基础计算题（要求有计算公式、代数过程。每小题4分，共20分）}
+\begin{enumerate}[start=36]
+\item 某奶茶店计划2024年营业额增长5\%，实际增长8\%，试计算该奶茶店2024年营业额计划完成程度，并根据结果判断其是否完成计划。
+\item 某餐厅在饿了么app上进行外卖业务，上线以来共收获了1000份评价回复，其中有200人认为该餐厅“包装完好”，求该餐厅外卖业务的包装好评率及其标准差。
+\item 现以$y$为因变量、$x$为自变量建立一元线性回归方程，若其可决系数为0.9，又已知$\sigma_x$是$\sigma_y$的两倍，求该回归方程的斜率。
+\item 某工厂生产一批新款防水手机10000台，纯随机不重复抽取其中100台进行防水测试，结果发现有5台手机未能达到所期望的防水效果，请在95.45\%的概率保证程度下，估计该工厂生产的这批手机防水通过率的可能范围。
+\item 某笔为期12年的投资以复利计算收益，近12年来的收益率有4年为7\%，3年为6\%，3年为5\%，2年为4\%，求整个投资期内的平均收益率。
+\end{enumerate}
+\sect{四、数据分析题（第41小题15分，第42小题12分，第43小题18分，共45分）}
+\begin{enumerate}[start=41]
+\item 某花店主花的相关销售资料如表1所示，请对该花店这些主花的销售额变动进行因素分析，具体要求如下。
+\begin{enumerate}[label=（\arabic*）,leftmargin=2.8em]\item 计算该花店这些主花的销售额总指数、销售量总指数和价格总指数；（10分）\item 分析价格及销售量对该花店这些主花销售额变动的影响程度及影响额。（5分）\end{enumerate}
+\begin{center}\textbf{表1　某花店主花的销售资料}\par
+\begin{tabular}{lrrr}\toprule 主花名称&\multicolumn{2}{c}{销售额（万元）}&价格增长百分比（\%）\\\cmidrule(lr){2-3}&2023年&2024年&\\\midrule 玫瑰&1167&1280&8\\百合&856&943&5\\郁金香&312&509&$-3$\\芍药&157&236&2\\\bottomrule\end{tabular}\end{center}
+\item 已知某出版社京东官方旗舰店近三年的季度销售额数据，如表2所示。
+\begin{enumerate}[label=（\arabic*）,leftmargin=2.8em]\item 请采用同期平均法计算季节指数，计算结果填入答卷表格中，不得留空白；（4分）\item 受季节因素影响最大的季度是哪个？请说明理由；（2分）\item 已知该旗舰店2025年上半年的销售额为1200万元，请你利用季节指数的特点，预测2025年三季度、四季度的销售额。（6分）\end{enumerate}
+\begin{center}\textbf{表2　某出版社京东官方旗舰店2022--2024年季度销售额数据（单位：万元）}\par
+\begin{tabular}{crrrr}\toprule 年份&一季度&二季度&三季度&四季度\\\midrule 2022&736&491&922&406\\2023&655&421&934&388\\2024&811&402&985&367\\\bottomrule\end{tabular}\end{center}
+\item 某运动品牌50家线下门店2024年第三季度的营业额如表3所示，请按要求分别完成以下统计整理和综合指标分析。
+\begin{enumerate}[label=（\arabic*）,leftmargin=2.8em]\item 根据表3资料，绘制茎叶图；（3分）\item 根据表3资料，完成组距式变量数列（即表4）的编制，并列出频数、频率、组中值、向上累计频数；（答卷上已有表格，请补充完整。4分）\item 根据表4，计算其算术平均数、标准差、中位数、众数；（8分）\item 该运动品牌这50家线下门店2023年第三季度的平均营业额为60万元，标准差为10万元，请比较这两年第三季度营业额的稳定性。（3分）\end{enumerate}
+\begin{center}\textbf{表3　某运动品牌的50家线下门店2024年第三季度营业额（单位：万元）}\par
+\begin{tabular}{*{10}{r}}38&39&43&48&48&50&51&51&53&54\\56&56&58&59&60&61&62&62&62&62\\63&64&64&64&65&65&66&66&66&67\\67&68&69&69&72&72&73&73&74&74\\75&75&75&77&82&82&83&85&94&95\end{tabular}\par\smallskip
+\textbf{表4　某运动品牌的50家线下门店2024年第三季度营业额分组统计}\par
+\begin{tabular}{ccccc}\toprule 按营业额分组（万元）&组中值（万元）&频数（家）&频率（\%）&向上累计频数（家）\\\midrule 50以下&&&&\\50--60&&&&\\60--70&&&&\\70--80&&&&\\80以上&&&&\\合计&&&&\\\bottomrule\end{tabular}\end{center}
+\end{enumerate}
+\newpage\begin{center}{\zihao{2}\sffamily\bfseries 参考答案}\end{center}
+\sect{选择题与判断题}
+单选1--5：DCADA；6--10：BDCDA；11--15：CBCBD；16--20：CCBAC；21--25：ABBAA。\par
+判断26--30：对、错、错、对、对；31--35：对、错、错、错、错。
+\sect{计算题}
+36. 计划完成程度$=(1+8\%)/(1+5\%)=102.86\%>100\%$，完成计划。\par
+37. $p=200/1000=20\%$，$\sigma_p=\sqrt{0.2\times0.8/1000}=1.26\%$。\par
+38. $R^2=r^2=(b\sigma_x/\sigma_y)^2$，故$0.9=(2b)^2$，$|b|=\sqrt{0.9}/2\approx0.4743$。由于题面没有给出相关方向，斜率符号不能唯一确定。\par
+39. $p=95\%$，$\mu_p=\sqrt{\frac{p(1-p)}{n}\frac{N-n}{N-1}}\approx2.17\%$，$\Delta_p=2\mu_p\approx4.34\%$，置信区间约为$[90.66\%,99.34\%]$。\par
+40. $\bar i=[(1.07)^4(1.06)^3(1.05)^3(1.04)^2]^{1/12}-1\approx5.74\%$。
+\sect{数据分析题}
+41. $K_{pq}=2968/2492=119.10\%$；$\sum p_0q_1=1280/1.08+943/1.05+509/0.97+236/1.02\approx2839.40$，故$K_q=113.94\%$，$K_p=104.53\%$。销售额增加476万元，其中销售量变动增加约347.40万元，价格变动增加约128.60万元。\par
+42. 各季度平均值为734、438、947、387，总平均值为626.5；季节指数为117.16\%、69.91\%、151.16\%、61.77\%。第三季度影响最大。按上半年1200万元及季节比例预测，第三、四季度销售额约为$1200\times151.16/(117.16+69.91)=969.82$万元、$1200\times61.77/(117.16+69.91)=396.30$万元。\par
+43. 原答案页的分组计算过程已据表3重算：频数依次为5、9、20、10、6；组中值取45、55、65、75、85时，$\bar x=65.6$万元，$\sigma\approx11.22$万元；中位数约65.5万元，众数约64.23万元。2024年标准差系数约17.10\%，2023年为16.67\%，故2023年相对更稳定。
+\end{document}
